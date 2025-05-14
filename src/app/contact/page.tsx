@@ -30,18 +30,21 @@ export default function ContactPage() {
             contact="Whatsapp"
             border="border-[#25D366]"
             color="text-[#25D366]"
+            href="https://api.whatsapp.com/send?phone=628111167867&text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20produk%20Anda."
           />
           <ContactButton
             icon={<InstagramIcon />}
             contact="Instagram"
             border="border-[#8134AF]"
             color="text-[#8134AF]"
+            href="https://www.instagram.com/anthonylog.id?igsh=MWRjYzBrZnFxYW8yZg=="
           />
           <ContactButton
             icon={<LinkedInIcon />}
             contact="LinkedIn"
             border="border-[#0A66C2]"
             color="text-[#0A66C2]"
+            href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
           />
         </div>
       </div>

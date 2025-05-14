@@ -1,7 +1,7 @@
 "use client";
 import useScreenOrientation from "@/hook/useScreenOrientation";
+import NavbarPotrait from "./navbar-portrait";
 import NavbarLandscape from "./navbar-landscape";
-import NavbarPotrait from "./navbar-potrait";
 
 export default function Navbar() {
   const { orientation } = useScreenOrientation();

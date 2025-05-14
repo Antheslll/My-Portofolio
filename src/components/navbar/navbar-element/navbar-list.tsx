@@ -15,3 +15,13 @@ const NavbarList = ({ nav, link }: NavbarListProps) => {
 };
 
 export default NavbarList;
+
+const FooterNavList = ({ nav, link }: NavbarListProps) => {
+  return (
+    <Link href={link}>
+      <li className="poppins-font font-semibold text-[1.8vw]">{nav}</li>
+    </Link>
+  );
+};
+
+export { FooterNavList };

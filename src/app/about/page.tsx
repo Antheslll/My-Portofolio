@@ -1,10 +1,13 @@
+import AboutPageHeader from "@/components/features/about-page/header";
+import AboutPageSkill from "@/components/features/about-page/skill-section";
+import AboutPageWho from "@/components/features/about-page/who-section";
+
 export default function AboutPage() {
   return (
     <>
-      <div className="pt-[1vh] sm:pt-[10vh]">
-        <h2>About Us</h2>
-        <p>This is the about page content.</p>
-      </div>
+      <AboutPageHeader />
+      <AboutPageWho />
+      <AboutPageSkill />
     </>
   );
 }
