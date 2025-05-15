@@ -1,8 +1,13 @@
+import ConsultationBookingSection from "@/components/features/service-page/consultation-booking-section";
+import ServicePageHeader from "@/components/features/service-page/header";
+import ServiceListSection from "@/components/features/service-page/service-list-section";
+
 export default function ServicePage() {
   return (
     <div>
-      <h2>Service</h2>
-      <p>This is the Service page content.</p>
+      <ServicePageHeader />
+      <ServiceListSection />
+      <ConsultationBookingSection />
     </div>
   );
 }

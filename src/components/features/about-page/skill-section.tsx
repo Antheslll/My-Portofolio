@@ -17,9 +17,9 @@ const AboutPageSkill = () => {
     }
   };
   return (
-    <main className="w-full h-[100vh] grid grid-rows-[20vh_80vh]">
-      <div className="w-full h-full flex justify-center items-end">
-        <ul className="w-[80%] h-[50%] bg-[#F3F4F6] grid grid-cols-3 rounded-[20px] border-3 border-black">
+    <main className="w-full h-[100vh] sm:h-[200vh] md:h-[100vh] lg:h-[120vh] xl:h-[170vh] grid grid-rows-[20vh_80vh] sm:grid-rows-[70vh_130vh] md:grid-rows-[20vh_80vh] lg:grid-rows-[20vh_80vh] xl:grid-rows-[30vh_100vh]">
+      <div className="w-full h-full flex justify-center md:items-end lg:items-center">
+        <ul className="w-[80%] lg:w-[50%] h-[50%] sm:h-[40%] md:h-[50%] bg-[#F3F4F6] grid grid-cols-3 rounded-[20px] lg:rounded-[15px] border-3 border-black">
           <SkillNavigationList
             nav="Frontend"
             skillPage={skillPage}

@@ -5,9 +5,11 @@ import AboutPageWho from "@/components/features/about-page/who-section";
 export default function AboutPage() {
   return (
     <>
-      <AboutPageHeader />
-      <AboutPageWho />
-      <AboutPageSkill />
+      <div className="">
+        <AboutPageHeader />
+        <AboutPageWho />
+        <AboutPageSkill />
+      </div>
     </>
   );
 }

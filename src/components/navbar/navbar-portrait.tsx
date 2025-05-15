@@ -1,10 +1,14 @@
 import HamburgerIcon from "@/svg/hamburger-icon";
 import Image from "next/image";
 
-const NavbarPotrait = () => {
+interface NavbarPortraitProps {
+  handleOpenOverlay: () => void;
+}
+
+const NavbarPotrait = ({ handleOpenOverlay }: NavbarPortraitProps) => {
   return (
     <div className="w-full h-full bg-white grid grid-cols-[20%_60%_20%] ">
-      <div className=" flex-centered">
+      <div className="flex-centered">
         <Image
           src="/assets/transparant navbar Icon.png"
           alt="image on Navbar"
@@ -22,7 +26,10 @@ const NavbarPotrait = () => {
         </span>
       </div>
       <div className="flex-centered">
-        <div className="w-[20%]">
+        <div
+          className="w-[20%] cursor-pointer"
+          onClick={() => handleOpenOverlay()}
+        >
           <HamburgerIcon />
         </div>
       </div>

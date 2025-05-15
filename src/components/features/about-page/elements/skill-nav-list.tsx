@@ -19,7 +19,7 @@ const SkillNavigationList = ({
           handleSetPage(nav);
         }}
       >
-        <span className="text-[3vw] poppins-font">{nav}</span>
+        <span className="text-[3vw] lg:text-[2vw] poppins-font">{nav}</span>
       </span>
     </li>
   );
