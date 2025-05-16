@@ -3,6 +3,7 @@
 import useScreenOrientation from "@/hook/useScreenOrientation";
 import useScreenSize from "@/hook/useScreenSize";
 import Image from "next/image";
+import Link from "next/link";
 
 const ActionSection = () => {
   const { width } = useScreenSize();
@@ -38,9 +39,12 @@ const ActionSection = () => {
                   untuk bahas langkah selanjutnya, dan buka peluang yang belum
                   terlihat.
                 </p>
-                <div>
+                <Link
+                  href="https://api.whatsapp.com/send?phone=628111167867&text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20produk%20Anda."
+                  target="_blank"
+                >
                   <button
-                    className={`w-[85%] md:h-[15vh] rounded-sm bg-[#59DB8A] text-white grid grid-cols-[1fr_4fr]`}
+                    className={`cursor-pointer w-[85%] md:h-[15vh] rounded-sm bg-[#59DB8A] text-white grid grid-cols-[1fr_4fr]`}
                   >
                     <div className="flex-centered">
                       <WAIconWhite />
@@ -49,7 +53,7 @@ const ActionSection = () => {
                       Hubungi Sekarang!
                     </span>
                   </button>
-                </div>
+                </Link>
               </div>
               <div className="w-full h-full">
                 <Image
@@ -66,11 +70,11 @@ const ActionSection = () => {
                 Tampilkan profesionalismemu dengan cara yang tepat, biar klien
                 langsung yakin kamu yang mereka cari!
               </p>
-              <div className="flex-centered">
-                <button className="w-[80%] md:h-[17vh] text-[3.5vw] bg-[#3B82F6] text-white rounded-md">
+              <Link href="/service" className="flex-centered">
+                <button className="cursor-pointer w-[80%] md:h-[17vh] text-[3.5vw] bg-[#3B82F6] text-white rounded-md">
                   Lihat Layanan Sekarang!
                 </button>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -78,7 +82,7 @@ const ActionSection = () => {
     );
   } else {
     return (
-      <main className="w-full h-[100vh] sm:h-[250vh] md:h-[100vh] lg:h-[150vh] xl:h-[200vh] grid grid-rows-[15vh_80vh] sm:grid-rows-[60vh_150vh] md:grid-rows-[20vh_80vh] lg:grid-rows-[25vh_80vh]">
+      <main className="w-full h-[100vh] sm:h-[250vh] md:h-[100vh] lg:h-[200vh] xl:h-[200vh] grid grid-rows-[15vh_80vh] sm:grid-rows-[60vh_150vh] md:grid-rows-[20vh_80vh] lg:grid-rows-[25vh_80vh]">
         <div className="w-full flex justify-center">
           {" "}
           <div className="w-[90%] flex flex-col gap-y-[2vh] ">
@@ -106,9 +110,12 @@ const ActionSection = () => {
                   untuk bahas langkah selanjutnya, dan buka peluang yang belum
                   terlihat.
                 </p>
-                <div>
+                <Link
+                  href="https://api.whatsapp.com/send?phone=628111167867&text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20produk%20Anda."
+                  target="_blank"
+                >
                   <button
-                    className={`w-[85%] h-[4vh] sm:h-[13vh] md:h-[5vh] lg:h-[70px] rounded-sm bg-[#59DB8A] text-white grid grid-cols-[1fr_4fr]`}
+                    className={` cursor-pointer w-[85%] h-[4vh] sm:h-[13vh] md:h-[5vh] lg:h-[70px] rounded-sm bg-[#59DB8A] text-white grid grid-cols-[1fr_4fr]`}
                   >
                     <div className="flex-centered">
                       <WAIconWhite />
@@ -117,7 +124,7 @@ const ActionSection = () => {
                       Hubungi Sekarang!
                     </span>
                   </button>
-                </div>
+                </Link>
               </div>
               <div className="w-full h-full flex-centered">
                 <Image
@@ -134,11 +141,11 @@ const ActionSection = () => {
                 Tampilkan profesionalismemu dengan cara yang tepat, biar klien
                 langsung yakin kamu yang mereka cari!
               </p>
-              <div className="flex-centered">
-                <button className="w-[80%] h-[5vh] sm:h-[20vh] md:h-[7vh] text-[3.5vw] lg:h-[100px] lg:text-[4vw]  bg-[#3B82F6] text-white rounded-md">
+              <Link href="/service" className="flex-centered">
+                <button className="cursor-pointer w-[80%] h-[5vh] sm:h-[20vh] md:h-[7vh] text-[3.5vw] lg:h-[100px] lg:text-[4vw]  bg-[#3B82F6] text-white rounded-md">
                   Lihat Layanan Sekarang!
                 </button>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

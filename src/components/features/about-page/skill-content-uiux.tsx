@@ -2,14 +2,24 @@ import { FigmaIcon, UXDesignIcon } from "@/svg/skill-icon";
 import SkillCard, { SkillCardMD } from "./elements/frontend-skill";
 import useScreenOrientation from "@/hook/useScreenOrientation";
 import useScreenSize from "@/hook/useScreenSize";
+import { useEffect, useState } from "react";
 
 const SkillContentDesign = () => {
   const { orientation } = useScreenOrientation();
   const { width } = useScreenSize();
+  const [appear, setAppear] = useState(false);
+
+  useEffect(() => {
+    setAppear(true);
+  }, []);
 
   if (orientation === "portrait") {
     return (
-      <div className="w-full h-full pt-[10vh] md:pt-[5vh]">
+      <div
+        className={`${
+          appear ? "opacity-100" : "opacity-0"
+        } transition-all duration-500 ease-in-out w-full h-full pt-[10vh] md:pt-[5vh]`}
+      >
         <ul className="w-full h-full flex items-center flex-col flex-wrap gap-y-[3vh] md:gap-y-[10vh]">
           <SkillCard
             icon={<FigmaIcon />}
@@ -31,7 +41,11 @@ const SkillContentDesign = () => {
     (orientation === "landscape" && width >= 1024)
   ) {
     return (
-      <div className="w-full h-full flex">
+      <div
+        className={`${
+          appear ? "opacity-100" : "opacity-0"
+        } transition-all duration-500 ease-in-out w-full h-full flex`}
+      >
         <ul className="w-full h-full flex justify-center pt-[10vh] flex-row flex-wrap gap-y-[3vh]">
           <SkillCard
             icon={<FigmaIcon />}
@@ -50,7 +64,11 @@ const SkillContentDesign = () => {
     );
   } else if (width > 768 && orientation === "landscape" && width < 1024) {
     return (
-      <div className="w-full h-full flex">
+      <div
+        className={`${
+          appear ? "opacity-100" : "opacity-0"
+        } transition-all duration-500 ease-in-out w-full h-full flex`}
+      >
         <ul className="w-full h-full flex justify-center pt-[20vh] flex-row flex-wrap gap-x-[3vw]">
           <SkillCardMD
             icon={<FigmaIcon />}

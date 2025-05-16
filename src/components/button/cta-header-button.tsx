@@ -1,16 +1,22 @@
+"use client";
+import Link from "next/link";
+
 interface CTAButtonProps {
   width: string;
   height: string;
   textSize: string;
   text: string;
+  link: string;
 }
-const CTAButton = ({ width, height, textSize, text }: CTAButtonProps) => {
+const CTAButton = ({ width, height, textSize, text, link }: CTAButtonProps) => {
   return (
-    <button
-      className={`${width} ${height} ${textSize} rounded-sm bg-[#3B82F6] text-white`}
-    >
-      {text}
-    </button>
+    <Link href={link}>
+      <button
+        className={`${width} ${height} ${textSize} cursor-pointer rounded-sm bg-[#3B82F6] text-white`}
+      >
+        {text}
+      </button>
+    </Link>
   );
 };
 

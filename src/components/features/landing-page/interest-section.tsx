@@ -10,7 +10,10 @@ const InterestSection = () => {
 
   if (width >= 768 && width < 1024 && orientation === "landscape") {
     return (
-      <main className="w-full md:h-[250vh] grid md:grid-rows-[80vh_70vh]">
+      <main
+        id="home-main"
+        className="w-full md:h-[250vh] grid md:grid-rows-[80vh_70vh]"
+      >
         <div className="w-full flex justify-center pt-[5vh]">
           {" "}
           <div className="w-[90%] flex flex-col gap-y-[2vh]">
@@ -56,6 +59,7 @@ const InterestSection = () => {
                     height="md:h-[15vh] "
                     textSize="text-[2.5vw] lg:text-[2.5vw] "
                     text="Buat Portofoliomu sekarang →"
+                    link="/service"
                   />
                 </div>
               </div>
@@ -81,7 +85,10 @@ const InterestSection = () => {
     );
   } else {
     return (
-      <main className="w-full h-[110vh] sm:h-[300vh] md:h-[100vh] lg:h-[180vh] xl:h-[240vh] grid grid-rows-[30vh_70vh] sm:grid-rows-[100vh_200vh] md:grid-rows-[30vh_70vh] lg:grid-rows-[40vh_120vh] xl:grid-rows-[65vh_160vh]">
+      <main
+        id="home-main"
+        className="w-full h-[110vh] sm:h-[300vh] md:h-[100vh] lg:h-[180vh] xl:h-[240vh] grid grid-rows-[30vh_70vh] sm:grid-rows-[100vh_200vh] md:grid-rows-[30vh_70vh] lg:grid-rows-[40vh_120vh] xl:grid-rows-[65vh_160vh]"
+      >
         <div className="w-full flex justify-center pt-[5vh]">
           {" "}
           <div className="w-[90%] lg:w-[80%] xl:w-[70%] flex flex-col gap-y-[2vh]">
@@ -127,6 +134,7 @@ const InterestSection = () => {
                     height="h-[5vh] sm:h-[15vh] md:h-[7vh] lg:h-[80px]"
                     textSize="text-[2.5vw] lg:text-[2.5vw] "
                     text="Buat Portofoliomu sekarang →"
+                    link="/service"
                   />
                 </div>
               </div>

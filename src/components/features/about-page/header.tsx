@@ -33,6 +33,7 @@ const AboutPageHeader = () => {
                   height="h-[30px] sm:h-[60px]"
                   textSize="text-[10px] sm:text-[20px]"
                   text="Kenalan yuk!"
+                  link="#who-section"
                 />
               </div>
             </div>
@@ -74,11 +75,12 @@ const AboutPageHeader = () => {
                   height="lg:h-[50px]"
                   textSize="lg:text-[15px]"
                   text="Kenalan yuk!"
+                  link="#who-section"
                 />
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-end lg:justify-start overflow-hidden">
+          <div className="flex justify-center items-end overflow-hidden">
             <HeaderImage />
           </div>
         </header>
@@ -109,6 +111,7 @@ const AboutPageHeader = () => {
                   height="h-[30px] sm:h-[60px]"
                   textSize="text-[10px] sm:text-[20px]"
                   text="Kenalan yuk!"
+                  link="#who-section"
                 />
               </div>
             </div>

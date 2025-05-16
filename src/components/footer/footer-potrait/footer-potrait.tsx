@@ -51,6 +51,7 @@ const FooterPotrait = () => {
         </ul>
         <div className="flex-centered">
           <Link
+            target="_blank"
             href="https://www.instagram.com/tavralabs?igsh=MXBtbzkwa2dqMDA2cg=="
             className="text-[2.2vw] text-[#3B82F6] underline inter-font"
           >
@@ -113,6 +114,7 @@ const FooterPotrait = () => {
         </ul>
         <div className="flex-centered">
           <Link
+            target="_blank"
             href="https://www.instagram.com/tavralabs?igsh=MXBtbzkwa2dqMDA2cg=="
             className="text-[2.2vw] text-[#3B82F6] underline inter-font"
           >

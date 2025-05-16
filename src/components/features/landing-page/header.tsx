@@ -37,7 +37,7 @@ const HomePageHeader = () => {
             </div>
             <div className="flex-centered">
               <Link
-                href=""
+                href="#home-main"
                 className="text-[#3B82F6] text-[2vw] lg:text-[1.3vw]"
               >
                 🡳 Scroll ke bawah buat tahu caranya
@@ -86,7 +86,7 @@ const HomePageHeader = () => {
               </div>
               <div className="w-full">
                 <Link
-                  href=""
+                  href="#home-main"
                   className="text-[#3B82F6] text-[2vw] lg:text-[1.3vw]"
                 >
                   🡳 Scroll ke bawah buat tahu caranya
@@ -128,7 +128,7 @@ const HomePageHeader = () => {
             </div>
             <div className="flex-centered">
               <Link
-                href=""
+                href="#home-main"
                 className="text-[#3B82F6] text-[2vw] lg:text-[1.3vw]"
               >
                 🡳 Scroll ke bawah buat tahu caranya

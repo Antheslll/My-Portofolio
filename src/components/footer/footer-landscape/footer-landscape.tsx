@@ -72,6 +72,7 @@ const FooterLandscape = () => {
         <div className="w-full border-l-6 border-white pt-[5vh] flex items-center flex-col gap-y-[5vh]">
           <div className="flex-centered">
             <Link
+              target="_blank"
               href="https://www.instagram.com/tavralabs?igsh=MXBtbzkwa2dqMDA2cg=="
               className="text-[1vw] text-[#3B82F6] underline inter-font"
             >

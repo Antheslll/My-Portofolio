@@ -61,7 +61,7 @@ export default function ContactPage() {
     );
   } else {
     return (
-      <main className=" w-[full] h-[90vh] sm:h-[200vh] md:h-[90vh]  grid grid-rows-[clamp(70px,15vh,140px)_clamp(230px,35vh,350px)_clamp(240px,40vh,400px)] sm:grid-rows-[50vh_70vh_100vh] md:grid-rows-[15vh_35vh_40vh] lg:grid-rows-[55vh_5vh_20vh] xl:pt-[5vh]">
+      <main className=" w-[full] h-[90vh] sm:h-[200vh] md:h-[90vh] lg:h-[130vh] grid grid-rows-[clamp(70px,15vh,140px)_clamp(230px,35vh,350px)_clamp(240px,40vh,400px)] sm:grid-rows-[50vh_70vh_100vh] md:grid-rows-[15vh_35vh_40vh] lg:grid-rows-[90vh_15vh_20vh] xl:pt-[5vh]">
         <div className=" lg:hidden flex justify-center sm:pt-[15vh] md:pt-0 items-center sm:items-start md:items-center">
           <h1 className="poppins-font font-bold text-[2.7vw]">
             Ayo ngobrol 📞 — langkah kecil bisa jadi awal yang besar.✨

@@ -1,4 +1,5 @@
 import { TelephoneIcon } from "@/svg/contact-icon";
+import Link from "next/link";
 
 const ConsultationBookingSection = () => {
   return (
@@ -27,13 +28,17 @@ const ConsultationBookingSection = () => {
               sasaran.
             </p>
           </div>
-          <div className="flex-centered">
+          <Link
+            href="https://api.whatsapp.com/send?phone=628111167867&text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20produk%20Anda."
+            target="_blank"
+            className="flex-centered"
+          >
             <button
-              className={` w-[80%] h-[40%] text-[1.5vw] rounded-full bg-[#3B82F6] text-white`}
+              className={`cursor-pointer w-[80%] h-[40%] text-[1.5vw] rounded-full bg-[#3B82F6] text-white`}
             >
               Jadwalkan Konsultasi
             </button>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

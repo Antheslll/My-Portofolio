@@ -10,7 +10,10 @@ const AboutPageWho = () => {
 
   if (width < 1024 && orientation === "portrait") {
     return (
-      <main className="w-full h-[100vh] sm:h-[300vh] md:h-[105vh] grid grid-rows-[45vh_60vh] sm:grid-rows-[100vh_200vh] md:grid-rows-[45vh_60vh] ">
+      <main
+        id="who-section"
+        className="w-full h-[100vh] sm:h-[300vh] md:h-[105vh] grid grid-rows-[45vh_60vh] sm:grid-rows-[100vh_200vh] md:grid-rows-[45vh_60vh] "
+      >
         <div className="flex flex-col pt-[7vh] md:pt-[3vh] gap-y-[2vh]">
           <div>
             <h2 className="poppins-font font-semibold text-[8vw] sm:text-[6vw] md:text-[8vw] text-center">
@@ -39,6 +42,7 @@ const AboutPageWho = () => {
               height="h-[30px] sm:h-[60px]"
               textSize="text-[10px] sm:text-[20px]"
               text="Lihat Hasil Kerja Saya →"
+              link="/project"
             />
           </div>
         </div>
@@ -49,7 +53,10 @@ const AboutPageWho = () => {
     );
   } else if (width >= 1024) {
     return (
-      <main className="lg:h-[105vh] grid lg:grid-cols-[50%_50%] overflow-hidden">
+      <main
+        id="who-section"
+        className="lg:h-[105vh] grid lg:grid-cols-[50%_50%] overflow-hidden"
+      >
         <div className="w-full pl-[10%] flex flex-col lg:gap-y-[3vh] pt-[15vh]">
           <div className="w-full">
             <h2 className="poppins-font font-semibold lg:text-[4vw]">
@@ -78,6 +85,7 @@ const AboutPageWho = () => {
               height="h-[30px] sm:h-[60px]"
               textSize="text-[10px] sm:text-[20px]"
               text="Lihat Hasil Kerja Saya →"
+              link="/project"
             />
           </div>
         </div>
@@ -88,7 +96,10 @@ const AboutPageWho = () => {
     );
   } else if (orientation === "landscape" && width < 1024) {
     return (
-      <main className="w-full h-[100vh] sm:h-[300vh] md:h-[300vh] grid grid-rows-[45vh_60vh] sm:grid-rows-[100vh_200vh] md:grid-rows-[130vh_170vh] ">
+      <main
+        id="who-section"
+        className="w-full h-[100vh] sm:h-[300vh] md:h-[300vh] grid grid-rows-[45vh_60vh] sm:grid-rows-[100vh_200vh] md:grid-rows-[130vh_170vh] "
+      >
         <div className="flex flex-col pt-[7vh] md:pt-[20vh] gap-y-[2vh]">
           <div>
             <h2 className="poppins-font font-semibold text-[8vw] sm:text-[6vw] md:text-[7vw] text-center">
@@ -117,6 +128,7 @@ const AboutPageWho = () => {
               height="h-[30px] sm:h-[60px]"
               textSize="text-[10px] sm:text-[20px]"
               text="Lihat Hasil Kerja Saya →"
+              link="/project"
             />
           </div>
         </div>

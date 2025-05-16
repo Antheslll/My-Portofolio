@@ -6,14 +6,24 @@ import {
 } from "@/svg/skill-icon";
 import SkillCard, { SkillCardMD } from "./elements/frontend-skill";
 import useScreenOrientation from "@/hook/useScreenOrientation";
+import { useEffect, useState } from "react";
 
 const SkillContentFrontend = () => {
   const { orientation } = useScreenOrientation();
   const { width } = useScreenOrientation();
+  const [appear, setAppear] = useState(false);
+
+  useEffect(() => {
+    setAppear(true);
+  }, []);
 
   if (orientation === "portrait") {
     return (
-      <div className="w-full h-full flex gap-y-[10vh] pt-[5vh]">
+      <div
+        className={`${
+          appear ? "opacity-100" : "opacity-0"
+        } transition-all duration-500 ease-in-out w-full h-full flex gap-y-[10vh] pt-[5vh]`}
+      >
         <ul className="w-full h-full flex flex-wrap">
           <SkillCard
             icon={<TailwindCSSIcon />}
@@ -47,7 +57,11 @@ const SkillContentFrontend = () => {
     (orientation === "landscape" && width >= 1024)
   ) {
     return (
-      <div className="w-full h-full flex gap-y-[10vh] sm:flex-centered md:pt-[10vh] lg:pt-[15vh]">
+      <div
+        className={`${
+          appear ? "opacity-100" : "opacity-0"
+        } transition-all duration-500 ease-in-out w-full h-full flex gap-y-[10vh] sm:flex-centered md:pt-[10vh] lg:pt-[15vh]`}
+      >
         <ul className="w-full h-full flex flex-wrap">
           <SkillCard
             icon={<TailwindCSSIcon />}
@@ -78,7 +92,11 @@ const SkillContentFrontend = () => {
     );
   } else if (width > 768 && orientation === "landscape" && width < 1024) {
     return (
-      <div className="w-full h-full flex gap-y-[10vh] md:flex-centered md:pt-[20vh] lg:pt-[15vh]">
+      <div
+        className={`${
+          appear ? "opacity-100" : "opacity-0"
+        } transition-all duration-500 ease-in-out w-full h-full flex gap-y-[10vh] md:flex-centered md:pt-[20vh] lg:pt-[15vh]`}
+      >
         <ul className="w-full h-full flex flex-wrap">
           <SkillCardMD
             icon={<TailwindCSSIcon />}

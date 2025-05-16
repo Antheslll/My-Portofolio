@@ -78,6 +78,7 @@ const ProcessSection = () => {
             height="h-[35px] sm:h-[60px]"
             textSize="text-[10px] sm:text-[18px]"
             text="Hubungi Kami Sekarang!"
+            link="/contact"
           />
         </div>
       </main>
@@ -107,6 +108,7 @@ const ProcessSection = () => {
               height="h-[35px] sm:h-[60px] lg:h-[50px]"
               textSize="text-[10px] sm:text-[18px] lg:text-[15px]"
               text="Hubungi Kami Sekarang!"
+              link="/contact"
             />
           </div>
           <div>
@@ -170,6 +172,7 @@ const ProcessSection = () => {
             height="h-[35px] sm:h-[60px]"
             textSize="text-[10px] sm:text-[18px]"
             text="Hubungi Kami Sekarang!"
+            link="/contact"
           />
         </div>
       </main>

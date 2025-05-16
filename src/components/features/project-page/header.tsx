@@ -28,16 +28,16 @@ const ProjectHeader = () => {
                 makin pede.
               </h4>
               <div className="flex-centered flex-col mt-[clamp(30px,5vh,40px)] gap-y-[1vh] sm:gap-y-[5vh]">
-                <Link href="#project-main">
-                  <CTAButton
-                    width="w-[100px] sm:w-[200px]"
-                    height="h-[30px] sm:h-[60px]"
-                    textSize="text-[10px] sm:text-[20px]"
-                    text="Kenalan yuk!"
-                  />
-                </Link>
+                <CTAButton
+                  width="w-[100px] sm:w-[200px]"
+                  height="h-[30px] sm:h-[60px]"
+                  textSize="text-[1.3vw]"
+                  text="Jelajahi Selengkapnya 🡳 "
+                  link="#project-main"
+                />
                 <Link
                   href="/about"
+                  target="_blank"
                   className="underline text-[#3B82F6] text-[2vw]"
                 >
                   atau mau kenalan dulu?
@@ -68,16 +68,16 @@ const ProjectHeader = () => {
                 makin pede.
               </h4>
               <div className="w-full mt-[clamp(30px,5vh,40px)] flex flex-col lg:gap-y-[3vh]">
-                <Link href="#project-main">
-                  <CTAButton
-                    width="w-[100px] sm:w-[200px]"
-                    height="h-[30px] sm:h-[60px]"
-                    textSize="text-[10px] sm:text-[20px]"
-                    text="Kenalan yuk!"
-                  />
-                </Link>
+                <CTAButton
+                  width="w-[100px] sm:w-[200px]"
+                  height="h-[30px] sm:h-[60px]"
+                  textSize="text-[10px] sm:text-[1.2vw]"
+                  text="Jelajahi Selengkapnya 🡳 "
+                  link="#project-main"
+                />
                 <Link
                   href="/about"
+                  target="_blank"
                   className="underline text-[#3B82F6] text-[2vw] lg:text-[1.3vw]"
                 >
                   atau mau kenalan dulu?
@@ -85,7 +85,7 @@ const ProjectHeader = () => {
               </div>
             </div>
           </div>
-          <div className="flex lg:justify-start overflow-hidden">
+          <div className="flex lg:justify-start lg:items-center overflow-hidden">
             <div className="scale-x-[-1]">
               <ProjectHeaderImage />
             </div>
@@ -110,16 +110,16 @@ const ProjectHeader = () => {
                 makin pede.
               </h4>
               <div className="flex-centered flex-col mt-[clamp(30px,5vh,40px)] gap-y-[1vh] sm:gap-y-[5vh]">
-                <Link href="#project-main">
-                  <CTAButton
-                    width="w-[100px] sm:w-[200px]"
-                    height="h-[30px] sm:h-[60px]"
-                    textSize="text-[10px] sm:text-[20px]"
-                    text="Kenalan yuk!"
-                  />
-                </Link>
+                <CTAButton
+                  width="w-[100px] sm:w-[200px]"
+                  height="h-[30px] sm:h-[60px]"
+                  textSize="text-[10px] sm:text-[1.5vw]"
+                  text="Jelajahi Selengkapnya 🡳 "
+                  link="#project-main"
+                />
                 <Link
                   href="/about"
+                  target="_blank"
                   className="underline text-[#3B82F6] text-[2vw]"
                 >
                   atau mau kenalan dulu?

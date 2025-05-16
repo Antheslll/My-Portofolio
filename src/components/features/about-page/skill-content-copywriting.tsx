@@ -1,13 +1,24 @@
 import Image from "next/image";
 import useScreenOrientation from "@/hook/useScreenOrientation";
 import useScreenSize from "@/hook/useScreenSize";
+import { useEffect, useState } from "react";
 
 const SkillContentCopywriting = () => {
   const { width } = useScreenSize();
   const { orientation } = useScreenOrientation();
+  const [appear, setAppear] = useState(false);
+
+  useEffect(() => {
+    setAppear(true);
+  }, []);
+
   if (width >= 768 && width < 1024 && orientation === "landscape") {
     return (
-      <main className="w-full h-full flex-centered lg:pb-0">
+      <main
+        className={`${
+          appear ? "opacity-100" : "opacity-0"
+        } transition-all duration-500 ease-in-out w-full h-full flex-centered lg:pb-0`}
+      >
         <div className="w-[80%] h-auto flex flex-col gap-y-[5vh] xl:gap-y-[10vh] ">
           <p className="text-[#6B7280] inter-font text-center text-[3vw] sm:text-[2vw] md:text-[2.3vw] lg:text-[2vw]">
             Bisa jadi Kamu ke sini bukan karena penasaran, tapi karena
@@ -29,7 +40,11 @@ const SkillContentCopywriting = () => {
     );
   } else {
     return (
-      <main className="w-full h-full flex-centered pb-[20vh] lg:pb-0">
+      <main
+        className={`${
+          appear ? "opacity-100" : "opacity-0"
+        } transition-all duration-500 ease-in-out w-full h-full flex-centered pb-[20vh] lg:pb-0`}
+      >
         <div className="w-[80%] h-auto flex flex-col gap-y-[5vh] xl:gap-y-[10vh] ">
           <p className="text-[#6B7280] inter-font text-center text-[3vw] sm:text-[2vw] md:text-[3vw] lg:text-[2vw]">
             Bisa jadi Kamu ke sini bukan karena penasaran, tapi karena

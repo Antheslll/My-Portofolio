@@ -8,7 +8,9 @@ interface NavbarHamburgerProps {
 const NavbarHamburger = ({ nav, link }: NavbarHamburgerProps) => {
   return (
     <Link href={link}>
-      <li className="poppins-font font-semibold text-[6vw] list-none">{nav}</li>
+      <li className="poppins-font font-semibold text-[6vw] list-none text-black hover:text-[#3B82F6] hover:font-bold hover:text-[1.3vw] transition-all duration-200 ease-in-out">
+        {nav}
+      </li>
     </Link>
   );
 };

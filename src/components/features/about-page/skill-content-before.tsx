@@ -1,14 +1,24 @@
 import useScreenOrientation from "@/hook/useScreenOrientation";
 import useScreenSize from "@/hook/useScreenSize";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const SkillContentBefore = () => {
   const { width } = useScreenSize();
   const { orientation } = useScreenOrientation();
+  const [appear, setAppear] = useState(false);
+
+  useEffect(() => {
+    setAppear(true);
+  }, []);
 
   if (width >= 768 && width < 1024 && orientation === "landscape") {
     return (
-      <div className="flex flex-col gap-y-[10vh] pt-[10vh] md:pt-[15vh] lg:pt-[5vh] xl:pt-[10vh]">
+      <div
+        className={`${
+          appear ? "opacity-100" : "opacity-0"
+        } transition-all duration-500 ease-in-out flex flex-col gap-y-[10vh] pt-[10vh] md:pt-[15vh] lg:pt-[5vh] xl:pt-[10vh]`}
+      >
         <div className="w-full h-full flex-centered">
           <div className="w-[60vw] h-[60vw] sm:w-[30vw] sm:h-[30vw] md:w-[40vw] md:h-[40vw] lg:w-[30vw] lg:h-[30vw] xl:w-[25vw] xl:h-[25vw] bg-[#F3F4F6] rounded-full z-0"></div>
           <Image
@@ -30,7 +40,11 @@ const SkillContentBefore = () => {
     );
   } else {
     return (
-      <div className="flex flex-col gap-y-[10vh] pt-[10vh] md:pt-[15vh] lg:pt-[5vh] xl:pt-[10vh]">
+      <div
+        className={`${
+          appear ? "opacity-100" : "opacity-0"
+        } transition-all duration-500 ease-in-out flex flex-col gap-y-[10vh] pt-[10vh] md:pt-[15vh] lg:pt-[5vh] xl:pt-[10vh]`}
+      >
         <div className="w-full h-full flex-centered">
           <div className="w-[60vw] h-[60vw] sm:w-[30vw] sm:h-[30vw] md:w-[50vw] md:h-[50vw] lg:w-[30vw] lg:h-[30vw] xl:w-[25vw] xl:h-[25vw] bg-[#F3F4F6] rounded-full z-0"></div>
           <Image
