@@ -19,7 +19,7 @@ const HomeHeaderImageMD = () => {
     <Image
       src="/assets/landing-page-header-avatar.png"
       alt="my-avatar"
-      className=" md:w-[150vh] md:h-[150vh] object-cover "
+      className="sm:h-[clamp(500px,55vh,1000px)] sm:w-[clamp(500px,55vh,1000px)] md:w-[150vh] md:h-[150vh] object-cover "
       width={1000}
       height={1000}
     />

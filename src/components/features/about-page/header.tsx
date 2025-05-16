@@ -1,12 +1,14 @@
 "use client";
 import CTAButton from "@/components/button/cta-header-button";
-import HeaderImage from "./header-image";
+import HeaderImage, { HeaderImageMD } from "./header-image";
 import useScreenSize from "@/hook/useScreenSize";
+import useScreenOrientation from "@/hook/useScreenOrientation";
 
 const AboutPageHeader = () => {
   const { width } = useScreenSize();
+  const { orientation } = useScreenOrientation();
 
-  if (width < 1024) {
+  if (width < 1024 && orientation === "portrait") {
     return (
       <>
         <header className="sm:pt-[10vh] md:pt-0 h-[90vh] sm:h-[310vh] md:h-[90vh] grid grid-rows-[40vh_50vh] sm:grid-rows-[clamp(450px,40vh,500px)_clamp(600px,50vh,800px)] md:grid-rows-[40vh_50vh]">
@@ -78,6 +80,41 @@ const AboutPageHeader = () => {
           </div>
           <div className="flex justify-center items-end lg:justify-start overflow-hidden">
             <HeaderImage />
+          </div>
+        </header>
+      </>
+    );
+  } else if (width < 1024 && orientation === "landscape") {
+    return (
+      <>
+        <header className="w-full sm:pt-[10vh] sm:h-[250vh] sm:grid-rows-[100vh_130vh] md:h-[300vh] grid md:grid-rows-[130vh_170vh]">
+          <div className="w-full flex items-center flex-col pt-[2vh]">
+            <div className="w-[90%] flex flex-col gap-y-[1vh]">
+              <h2 className="poppins-font font-semibold text-center text-[3.5vw] ">
+                Halo! Saya Anthony 👋
+              </h2>
+              <h1 className="poppins-font font-semibold text-center text-[6vw]">
+                {" "}
+                <span className="text-[#3B82F6] ">Web Developer </span>
+                yang Bantu Freelancer Tampil Lebih Profesional
+              </h1>
+              <h4 className="inter-font text-center text-[2vw] pl-[clamp(20px,8.4vw,40px)] pr-[clamp(20px,8.4vw,40px)] ">
+                Saya bantu bikin website portofolio yang clean, cepat, dan
+                nunjukkin keunikan skill kamu—biar klien makin yakin dan kamu
+                makin pede.
+              </h4>
+              <div className="flex-centered mt-[clamp(30px,5vh,40px)]">
+                <CTAButton
+                  width="w-[100px] sm:w-[200px]"
+                  height="h-[30px] sm:h-[60px]"
+                  textSize="text-[10px] sm:text-[20px]"
+                  text="Kenalan yuk!"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center items-end overflow-hidden">
+            <HeaderImageMD />
           </div>
         </header>
       </>

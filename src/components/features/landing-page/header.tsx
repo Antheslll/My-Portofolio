@@ -53,7 +53,7 @@ const HomePageHeader = () => {
   } else if (width >= 1024) {
     return (
       <>
-        <header className="lg:h-[90vh] grid lg:grid-cols-[60%_40%]">
+        <header className="lg:h-[90vh] xl:h-[120vh] grid lg:grid-cols-[60%_40%]">
           <div className="w-full pl-[10%] pt-[15vh]">
             <div className="w-[90%] flex items-center flex-col gap-y-[2vh]">
               <div className="w-full">
@@ -100,12 +100,12 @@ const HomePageHeader = () => {
         </header>
       </>
     );
-  } else if (orientation === "landscape" && width > 768) {
+  } else if (orientation === "landscape" && width < 1024) {
     return (
-      <header className="md:h-[300vh] grid md:grid-rows-[130vh_170vh]">
+      <header className="md:h-[300vh] grid md:grid-rows-[130vh_170vh] sm:pt-[10vh] sm:h-[270vh] sm:grid-rows-[100vh_130vh]">
         <div className="w-full flex items-center justify-center pt-[5vh]">
           <div className="w-[90%] flex flex-col gap-y-[2vh] ">
-            <h1 className="poppins-font font-semibold text-center md:text-[5vw]">
+            <h1 className="poppins-font font-semibold text-center text-[5vw]">
               Kamu mungkin punya skill <br />
               <span className="text-[#3B82F6]">terbaik di bidangmu.</span> Tapi
               <span className="text-[#3B82F6]">

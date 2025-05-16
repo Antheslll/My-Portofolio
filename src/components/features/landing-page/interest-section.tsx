@@ -81,7 +81,7 @@ const InterestSection = () => {
     );
   } else {
     return (
-      <main className="w-full h-[110vh] sm:h-[300vh] md:h-[100vh] lg:h-[180vh] xl:h-[200vh] grid grid-rows-[30vh_70vh] sm:grid-rows-[100vh_200vh] md:grid-rows-[30vh_70vh] lg:grid-rows-[40vh_120vh] xl:grid-rows-[45vh_155vh]">
+      <main className="w-full h-[110vh] sm:h-[300vh] md:h-[100vh] lg:h-[180vh] xl:h-[240vh] grid grid-rows-[30vh_70vh] sm:grid-rows-[100vh_200vh] md:grid-rows-[30vh_70vh] lg:grid-rows-[40vh_120vh] xl:grid-rows-[65vh_160vh]">
         <div className="w-full flex justify-center pt-[5vh]">
           {" "}
           <div className="w-[90%] lg:w-[80%] xl:w-[70%] flex flex-col gap-y-[2vh]">

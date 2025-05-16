@@ -34,3 +34,28 @@ const ContactButton = ({
 };
 
 export default ContactButton;
+
+const ContactButtonMD = ({
+  contact,
+  icon,
+  color,
+  border,
+  href,
+}: ContactButtonProps) => {
+  return (
+    <Link href={href} target="_blank">
+      <button
+        className={`md:w-[30vw] md:h-[15vh] border-5 rounded-full grid md:grid-cols-[30%_70%]  ${border}`}
+      >
+        <span className=" flex-centered pl-[20%]">
+          <div className="w-[30%] sm:w-[50%] md:w-[50%]">{icon}</div>
+        </span>
+        <span className={`flex items-center  md:text-[3.5vw] ${color}`}>
+          {contact}
+        </span>
+      </button>
+    </Link>
+  );
+};
+
+export { ContactButtonMD };

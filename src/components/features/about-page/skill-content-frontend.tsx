@@ -4,11 +4,12 @@ import {
   ResponsiveIcon,
   TailwindCSSIcon,
 } from "@/svg/skill-icon";
-import SkillCard from "./elements/frontend-skill";
+import SkillCard, { SkillCardMD } from "./elements/frontend-skill";
 import useScreenOrientation from "@/hook/useScreenOrientation";
 
 const SkillContentFrontend = () => {
   const { orientation } = useScreenOrientation();
+  const { width } = useScreenOrientation();
 
   if (orientation === "portrait") {
     return (
@@ -41,9 +42,12 @@ const SkillContentFrontend = () => {
         </ul>
       </div>
     );
-  } else if (orientation === "landscape") {
+  } else if (
+    (orientation === "landscape" && width > 0 && width < 768) ||
+    (orientation === "landscape" && width >= 1024)
+  ) {
     return (
-      <div className="w-full h-full flex gap-y-[10vh] sm:flex-centered sm:pt-[10vh] lg:pt-[15vh]">
+      <div className="w-full h-full flex gap-y-[10vh] sm:flex-centered md:pt-[10vh] lg:pt-[15vh]">
         <ul className="w-full h-full flex flex-wrap">
           <SkillCard
             icon={<TailwindCSSIcon />}
@@ -64,6 +68,37 @@ const SkillContentFrontend = () => {
             bgColor="bg-[#F3F4F6]"
           />
           <SkillCard
+            icon={<ResponsiveIcon />}
+            skill={`Responsive Design`}
+            desc={`Membuat website yang optimal\ndi semua ukuran layar.`}
+            bgColor="bg-[#3B82F6]"
+          />
+        </ul>
+      </div>
+    );
+  } else if (width > 768 && orientation === "landscape" && width < 1024) {
+    return (
+      <div className="w-full h-full flex gap-y-[10vh] md:flex-centered md:pt-[20vh] lg:pt-[15vh]">
+        <ul className="w-full h-full flex flex-wrap">
+          <SkillCardMD
+            icon={<TailwindCSSIcon />}
+            skill="Tailwind CSS"
+            desc={`Styling cepat dan efisien \n dengan utility-first framework.`}
+            bgColor="bg-[#3B82F6]"
+          />
+          <SkillCardMD
+            icon={<ReactIcon />}
+            skill="React"
+            desc={`Membuat UI interaktif dan\nkomponen reusable.`}
+            bgColor="bg-[#F3F4F6]"
+          />
+          <SkillCardMD
+            icon={<NextJsIcon />}
+            skill="Next.js"
+            desc={`Framework React untuk SSR\ndan optimasi performa web.`}
+            bgColor="bg-[#F3F4F6]"
+          />
+          <SkillCardMD
             icon={<ResponsiveIcon />}
             skill={`Responsive Design`}
             desc={`Membuat website yang optimal\ndi semua ukuran layar.`}

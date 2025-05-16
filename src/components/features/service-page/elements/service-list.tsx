@@ -33,7 +33,7 @@ const ServiceList = ({ text, icon }: ServiceListProps) => {
   } else if (orientation === "landscape") {
     return (
       <li
-        className={`w-[35vw] h-[35vw] sm:w-[15vw] sm:h-[15vw] lg:w-[16vw] lg:h-[16vw] xl:w-[13vw] xl:h-[13vw] ${
+        className={`w-[35vw] h-[35vw] sm:w-[15vw] sm:h-[15vw] lg:w-[17vw] lg:h-[17vw] xl:w-[13vw] xl:h-[13vw] ${
           text === `Negotiation\nSupport Docs` ? "bg-[#1F2937]" : "bg-[#3B82F6]"
         }  rounded-[10%] flex justify-center`}
       >

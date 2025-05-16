@@ -94,7 +94,7 @@ const ActionSection = () => {
             </h2>
           </div>
         </div>
-        <div className="w-full flex justify-center pt-[5vh] md:pt-0 lg:pt-[5vh]">
+        <div className="w-full flex justify-center pt-[5vh] md:pt-0 lg:pt-[5vh] xl:pt-[20vh]">
           <div className="w-[80%] flex flex-col md:gap-y-[5vh] lg:gap-y-[5vh] xl:gap-y-[10vh]">
             <div className="grid grid-cols-[40%_60%]">
               <div className="flex flex-col gap-y-[1vh] pt-[4vh] sm:pt-[10vh] md:pt-[5vh] sm:gap-y-[4vh] lg:pt-[6vh] lg:gap-y-[8vh]">
@@ -119,7 +119,7 @@ const ActionSection = () => {
                   </button>
                 </div>
               </div>
-              <div className="w-full h-full">
+              <div className="w-full h-full flex-centered">
                 <Image
                   src="/assets/masih-ragu-avatar.png"
                   alt="my-avatar"
