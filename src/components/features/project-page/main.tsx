@@ -9,9 +9,9 @@ const ProjectMain = () => {
       id="project-main"
       className="sm:pt-[10vh] md:pt-0 h-[100vh] sm:h-[250vh] md:h-[110vh] lg:h-[150vh] xl:h-[200vh] grid grid-rows-[30vh_50vh_10vh] sm:grid-rows-[80vh_130vh_20vh] md:grid-rows-[40vh_50vh_10vh] lg:grid-rows-[35vh_90vh_20vh] xl:grid-rows-[50vh_90vh_30vh]"
     >
-      <div className="w-full flex justify-center pt-[5vh]">
-        <div className="w-[60%] flex flex-col gap-y-[2vh] lg:gap-y-[4vh]">
-          <h2 className="poppins-font font-semibold text-center lg:text-[3vw]">
+      <div className="w-full flex-centered pt-[5vh]">
+        <div className="lg:w-[60%] w-[80%] flex flex-col gap-y-[2vh] lg:gap-y-[4vh]">
+          <h2 className="poppins-font font-semibold text-center text-[4vw] lg:text-[3vw]">
             {" "}
             Proyek-Proyek Digital Saya
             <span className="text-[#3B82F6] ">

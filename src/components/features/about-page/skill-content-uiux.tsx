@@ -26,8 +26,8 @@ const SkillContentDesign = () => {
     );
   } else if (orientation === "landscape") {
     return (
-      <div className="w-full h-full flex ">
-        <ul className="w-full h-full flex-centered flex-row flex-wrap gap-y-[3vh]">
+      <div className="w-full h-full flex">
+        <ul className="w-full h-full flex justify-center pt-[10vh] flex-row flex-wrap gap-y-[3vh]">
           <SkillCard
             icon={<FigmaIcon />}
             skill="Figma"

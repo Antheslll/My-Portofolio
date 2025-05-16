@@ -78,7 +78,7 @@ export default function Navbar() {
     );
   } else if (orientation === "landscape") {
     return (
-      <nav className="sm:h-[10vh]">
+      <nav className="sm:h-auto">
         <NavbarLandscape />
       </nav>
     );

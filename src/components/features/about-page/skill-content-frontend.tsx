@@ -43,7 +43,7 @@ const SkillContentFrontend = () => {
     );
   } else if (orientation === "landscape") {
     return (
-      <div className="w-full h-full flex gap-y-[10vh] sm:flex-centered sm:pt-[30vh] lg:pt-[15vh]">
+      <div className="w-full h-full flex gap-y-[10vh] sm:flex-centered sm:pt-[10vh] lg:pt-[15vh]">
         <ul className="w-full h-full flex flex-wrap">
           <SkillCard
             icon={<TailwindCSSIcon />}

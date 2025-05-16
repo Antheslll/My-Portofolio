@@ -8,7 +8,7 @@ const AboutPageWho = () => {
 
   if (width < 1024) {
     return (
-      <main className="w-full h-[105vh] sm:h-[clamp(800px,105vh,1200px)] md:h-[105vh] grid grid-rows-[45vh_60vh] sm:grid-rows-[clamp(450px,45vh,700px)_clamp(350px,60vh,800px)] md:grid-rows-[45vh_60vh] ">
+      <main className="w-full h-[100vh] sm:h-[300vh] md:h-[105vh] grid grid-rows-[45vh_60vh] sm:grid-rows-[100vh_200vh] md:grid-rows-[45vh_60vh] ">
         <div className="flex flex-col pt-[7vh] md:pt-[3vh] gap-y-[2vh]">
           <div>
             <h2 className="poppins-font font-semibold text-[8vw] sm:text-[6vw] md:text-[8vw] text-center">
