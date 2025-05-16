@@ -21,7 +21,7 @@ const ServiceListSection = () => {
     { icon: <UXResearchIcon />, text: `UX\nResearch` },
     { icon: <WebsiteConsultationIcon />, text: `Website\nConsultation` },
     { icon: <StrategicWebFlowIcon />, text: `Strategic\nWebsite Flow` },
-    { icon: <NegoSupIcon />, text: `Negotiation\nSupport Docs` },
+    { icon: <NegoSupIcon />, text: `Strategic Sales\nIntelligent Document` },
   ];
 
   const { width } = useScreenSize();

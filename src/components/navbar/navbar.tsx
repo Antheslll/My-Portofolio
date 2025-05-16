@@ -67,6 +67,7 @@ export default function Navbar() {
                 key={nav.nav}
                 nav={nav.nav || ""}
                 link={nav.link || ""}
+                handleCloseOverlay={handleCloseOverlay}
               />
             ))}
           </ul>

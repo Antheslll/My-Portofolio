@@ -117,7 +117,7 @@ const ActionSection = () => {
                   <button
                     className={` cursor-pointer w-[85%] h-[4vh] sm:h-[13vh] md:h-[5vh] lg:h-[70px] rounded-sm bg-[#59DB8A] text-white grid grid-cols-[1fr_4fr]`}
                   >
-                    <div className="flex-centered">
+                    <div className=" w-full h-full flex-centered">
                       <WAIconWhite />
                     </div>
                     <span className="w-full h-full flex items-center text-white poppins-font text-[2vw] lg:text-[2vw]">
