@@ -87,7 +87,7 @@ const InterestSection = () => {
     return (
       <main
         id="home-main"
-        className="w-full h-[110vh] sm:h-[300vh] md:h-[100vh] lg:h-[200vh] xl:h-[240vh] grid grid-rows-[30vh_70vh] sm:grid-rows-[100vh_200vh] md:grid-rows-[30vh_70vh] lg:grid-rows-[60vh_120vh] xl:grid-rows-[65vh_160vh]"
+        className="w-full h-[110vh] sm:h-[300vh] md:h-[100vh] lg:h-[180vh] xl:h-[240vh] grid grid-rows-[30vh_70vh] sm:grid-rows-[100vh_200vh] md:grid-rows-[30vh_70vh] lg:grid-rows-[40vh_120vh] xl:grid-rows-[65vh_160vh]"
       >
         <div className="w-full flex justify-center pt-[5vh]">
           {" "}

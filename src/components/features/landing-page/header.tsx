@@ -11,7 +11,7 @@ const HomePageHeader = () => {
   const { orientation } = useScreenOrientation();
   if (width < 1024 && orientation === "portrait") {
     return (
-      <header className="sm:bg-amber-300 sm:pt-[10vh] md:pt-0 h-[95vh] sm:h-[270vh] md:h-[90vh] grid grid-rows-[35vh_60vh] sm:grid-rows-[130vh_130vh] md:grid-rows-[40vh_50vh]">
+      <header className="sm:pt-[10vh] md:pt-0 h-[95vh] sm:h-[270vh] md:h-[90vh] grid grid-rows-[35vh_60vh] sm:grid-rows-[130vh_130vh] md:grid-rows-[40vh_50vh]">
         <div className="w-full flex justify-center pt-[5vh]">
           <div className="w-[90%] flex flex-col gap-y-[2vh] ">
             <h1 className="poppins-font font-semibold text-center text-[5vw] md:text-[5vw]">
@@ -53,7 +53,7 @@ const HomePageHeader = () => {
   } else if (width >= 1024) {
     return (
       <>
-        <header className="lg:h-[110vh] xl:h-[140vh] grid lg:grid-cols-[60%_40%] lg:bg-blue-500 xl:bg-red-500 sm:bg-amber-300 md:bg-black">
+        <header className="lg:h-[90vh] xl:h-[120vh] grid lg:grid-cols-[60%_40%]">
           <div className="w-full pl-[10%] pt-[15vh]">
             <div className="w-[90%] flex items-center flex-col gap-y-[2vh]">
               <div className="w-full">
