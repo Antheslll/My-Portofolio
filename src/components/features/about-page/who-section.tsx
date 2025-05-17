@@ -1,6 +1,6 @@
 "use client";
 import CTAButton from "@/components/button/cta-header-button";
-import MainImage, { MainImageMD } from "./elements/main-image";
+import MainImage, { MainImageMD, MainImageSM } from "./elements/main-image";
 import useScreenSize from "@/hook/useScreenSize";
 import useScreenOrientation from "@/hook/useScreenOrientation";
 
@@ -12,7 +12,7 @@ const AboutPageWho = () => {
     return (
       <main
         id="who-section"
-        className="w-full h-[100vh] sm:h-[300vh] md:h-[105vh] grid grid-rows-[45vh_60vh] sm:grid-rows-[100vh_200vh] md:grid-rows-[45vh_60vh] "
+        className="w-full h-[110vh] sm:h-[110vh] md:h-[105vh] grid grid-rows-[45vh_60vh] sm:grid-rows-[45vh_60vh] md:grid-rows-[45vh_60vh] "
       >
         <div className="flex flex-col pt-[7vh] md:pt-[3vh] gap-y-[2vh]">
           <div>
@@ -47,7 +47,7 @@ const AboutPageWho = () => {
           </div>
         </div>
         <div className="flex justify-center overflow-hidden">
-          <MainImage />
+          {width > 640 && width < 768 ? <MainImageSM /> : <MainImage />}
         </div>
       </main>
     );

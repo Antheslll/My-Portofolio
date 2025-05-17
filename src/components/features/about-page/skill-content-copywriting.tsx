@@ -38,6 +38,32 @@ const SkillContentCopywriting = () => {
         </div>
       </main>
     );
+  } else if (width > 640 && width < 768 && orientation === "portrait") {
+    return (
+      <main
+        className={`${
+          appear ? "opacity-100" : "opacity-0"
+        } transition-all duration-500 ease-in-out w-full h-full flex-centered pb-[20vh] lg:pb-0`}
+      >
+        <div className="w-[80%] h-auto flex flex-col gap-y-[5vh] xl:gap-y-[10vh] ">
+          <p className="text-[#6B7280] inter-font text-center sm:text-[2.5vw]">
+            Bisa jadi Kamu ke sini bukan karena penasaran, tapi karena
+            <br />
+            copywriting saya berhasil membimbing Anda ke sini.
+          </p>
+          <div className="w-full h-full flex-centered">
+            <div className="sm:w-[50vw] sm:h-[50vw] bg-[#F3F4F6] rounded-full z-0"></div>
+            <Image
+              src="/assets/skill-copywriting.png"
+              alt="my-avatar"
+              className="sm:h-[40vh] sm:w-[40vh] object-cover overflow-hidden absolute z-10"
+              width={1000}
+              height={1000}
+            />
+          </div>
+        </div>
+      </main>
+    );
   } else {
     return (
       <main

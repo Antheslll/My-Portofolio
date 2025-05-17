@@ -38,6 +38,32 @@ const SkillContentBefore = () => {
         </div>
       </div>
     );
+  } else if (width > 640 && width < 768 && orientation === "portrait") {
+    return (
+      <div
+        className={`${
+          appear ? "opacity-100" : "opacity-0"
+        } transition-all duration-500 ease-in-out flex flex-col gap-y-[10vh] pt-[10vh] md:pt-[15vh] lg:pt-[5vh] xl:pt-[10vh]`}
+      >
+        <div className="w-full h-full flex-centered">
+          <div className="sm:w-[50vw] sm:h-[50vw] bg-[#F3F4F6] rounded-full z-0"></div>
+          <Image
+            src="/assets/skill-section-avatar.png"
+            alt="my-avatar"
+            className="h-[40vh] w-[40vh] sm:w-[40vh] sm:h-[40vh] object-cover overflow-hidden absolute z-10"
+            width={1000}
+            height={1000}
+          />
+        </div>
+        <div>
+          <h3 className="text-center poppins-font font-semibold text-[5vw] lg:text-[3vw] xl:text-[2.5vw]">
+            Pilih salah satu untuk lihat
+            <br />
+            keahlian yang saya kuasai
+          </h3>
+        </div>
+      </div>
+    );
   } else {
     return (
       <div

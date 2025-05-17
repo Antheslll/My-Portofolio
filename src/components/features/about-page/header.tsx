@@ -11,7 +11,7 @@ const AboutPageHeader = () => {
   if (width < 1024 && orientation === "portrait") {
     return (
       <>
-        <header className="sm:pt-[10vh] md:pt-0 h-[90vh] sm:h-[310vh] md:h-[90vh] grid grid-rows-[40vh_50vh] sm:grid-rows-[clamp(450px,40vh,500px)_clamp(600px,50vh,800px)] md:grid-rows-[40vh_50vh]">
+        <header className="h-[90vh] sm:h-[95vh] md:h-[90vh] grid grid-rows-[40vh_50vh] sm:grid-rows-[30vh_65vh] md:grid-rows-[40vh_50vh]">
           <div className="w-full flex items-center flex-col pt-[2vh]">
             <div className="w-[90%] flex flex-col gap-y-[1vh]">
               <h2 className="poppins-font font-semibold text-center text-[3.5vw] ">

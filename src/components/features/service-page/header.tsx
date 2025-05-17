@@ -14,7 +14,7 @@ const ServicePageHeader = () => {
   if (width < 1024 && orientation === "portrait") {
     return (
       <div>
-        <header className="sm:pt-[10vh] md:pt-0 h-[95vh] sm:h-[270vh] md:h-[90vh] grid grid-rows-[40vh_50vh] sm:grid-rows-[130vh_130vh] md:grid-rows-[40vh_50vh]">
+        <header className=" md:pt-0 h-[95vh] sm:h-[100vh] md:h-[90vh] grid grid-rows-[40vh_50vh] sm:grid-rows-[40vh_60vh] md:grid-rows-[40vh_50vh]">
           <div className="w-full flex justify-center pt-[5vh]">
             <div className="w-[90%] flex flex-col gap-y-[2vh] ">
               <h1 className="poppins-font font-semibold text-center text-[6vw] md:text-[5vw]">
@@ -31,7 +31,7 @@ const ServicePageHeader = () => {
                 Desain dan solusi digital yang disesuaikan untuk meningkatkan
                 profesionalisme dan daya tarik Anda di dunia freelance.
               </h4>
-              <div className="flex-centered flex-col gap-y-[1vh] sm:gap-y-[5vh] md:gap-y-[1vh]">
+              <div className="flex-centered flex-col gap-y-[1vh] sm:gap-y-[1vh] md:gap-y-[1vh]">
                 <Link
                   href="#project-main"
                   className="underline text-[#3B82F6] text-[2vw] lg:text-[1.3vw]"

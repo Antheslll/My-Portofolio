@@ -1,5 +1,5 @@
 import { FigmaIcon, UXDesignIcon } from "@/svg/skill-icon";
-import SkillCard, { SkillCardMD } from "./elements/frontend-skill";
+import SkillCard, { SkillCardMD, SkillCardSM } from "./elements/frontend-skill";
 import useScreenOrientation from "@/hook/useScreenOrientation";
 import useScreenSize from "@/hook/useScreenSize";
 import { useEffect, useState } from "react";
@@ -18,21 +18,40 @@ const SkillContentDesign = () => {
       <div
         className={`${
           appear ? "opacity-100" : "opacity-0"
-        } transition-all duration-500 ease-in-out w-full h-full pt-[10vh] md:pt-[5vh]`}
+        } transition-all duration-500 ease-in-out w-full h-full pt-[10vh] sm:pt-0 md:pt-[5vh]`}
       >
-        <ul className="w-full h-full flex items-center flex-col flex-wrap gap-y-[3vh] md:gap-y-[10vh]">
-          <SkillCard
-            icon={<FigmaIcon />}
-            skill="Figma"
-            desc={`Mendesain dan memprototipe\nantarmuka dengan efisien.`}
-            bgColor="bg-[#F3F4F6]"
-          />
-          <SkillCard
-            icon={<UXDesignIcon />}
-            skill="UX Design"
-            desc={`Memahami kebutuhan\npengguna dan menciptakan\npengalaman yang intuitif.`}
-            bgColor="bg-[#3B82F6]"
-          />
+        <ul className="w-full h-full flex items-center flex-col flex-wrap gap-y-[3vh] sm:gap-y-[10vh] md:gap-y-[10vh]">
+          {width < 768 && width > 640 ? (
+            <>
+              <SkillCardSM
+                icon={<FigmaIcon />}
+                skill="Figma"
+                desc={`Mendesain dan memprototipe\nantarmuka dengan efisien.`}
+                bgColor="bg-[#F3F4F6]"
+              />
+              <SkillCardSM
+                icon={<UXDesignIcon />}
+                skill="UX Design"
+                desc={`Memahami kebutuhan\npengguna dan menciptakan\npengalaman yang intuitif.`}
+                bgColor="bg-[#3B82F6]"
+              />
+            </>
+          ) : (
+            <>
+              <SkillCard
+                icon={<FigmaIcon />}
+                skill="Figma"
+                desc={`Mendesain dan memprototipe\nantarmuka dengan efisien.`}
+                bgColor="bg-[#F3F4F6]"
+              />
+              <SkillCard
+                icon={<UXDesignIcon />}
+                skill="UX Design"
+                desc={`Memahami kebutuhan\npengguna dan menciptakan\npengalaman yang intuitif.`}
+                bgColor="bg-[#3B82F6]"
+              />
+            </>
+          )}
         </ul>
       </div>
     );

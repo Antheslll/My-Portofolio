@@ -4,12 +4,15 @@ import { useEffect, useState } from "react";
 
 const HeaderImage = () => {
   const [avatar, setAvatar] = useState("start");
-
-  if (avatar === "start") {
-    setTimeout(() => {
-      setAvatar("real");
-    }, 3000);
-  } else if (avatar === "real") {
+  useEffect(() => {
+    if (avatar === "start") {
+      setTimeout(() => {
+        setAvatar("real");
+      }, 3000);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  if (avatar === "real") {
     setTimeout(() => {
       setAvatar("avatar");
     }, 8000);

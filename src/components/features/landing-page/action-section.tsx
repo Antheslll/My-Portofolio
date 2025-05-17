@@ -80,6 +80,77 @@ const ActionSection = () => {
         </div>
       </main>
     );
+  } else if (width >= 640 && width < 768 && orientation === "portrait") {
+    return (
+      <main className="w-full h-[100vh] sm:h-[100vh] grid sm:grid-rows-[10vh_90vh]">
+        <div className="w-full flex justify-center">
+          {" "}
+          <div className="w-[90%] flex flex-col gap-y-[2vh] ">
+            <h1 className="poppins-font font-semibold text-center text-[6vw] md:text-[5vw]">
+              Masih
+              <span className="text-[#3B82F6]">Ragu?</span>
+            </h1>
+            <h2 className="inter-font text-center text-[3vw] lg:text-[2.3vw] pl-[clamp(20px,8.4vw,40px)] pr-[clamp(20px,8.4vw,40px)] ">
+              Santai, tanya-tanya dulu aja,
+              <span className="text-red-600"> GRATIS.</span> Tapi ingat,
+              pesaingmu mungkin udah mulai duluan, jadi jangan terlalu lama
+              mikirnya!
+            </h2>
+          </div>
+        </div>
+        <div className="w-full flex justify-center pt-[5vh] md:pt-0 lg:pt-[5vh] xl:pt-[20vh]">
+          <div className="w-[80%] flex flex-col md:gap-y-[5vh] lg:gap-y-[5vh] xl:gap-y-[10vh]">
+            <div className="grid grid-cols-[40%_60%]">
+              <div className="flex flex-col gap-y-[1vh] pt-[4vh] sm:pt-[10vh] md:pt-[5vh] sm:gap-y-[4vh] lg:pt-[6vh] lg:gap-y-[8vh]">
+                <p className="text-[2.8vw]">
+                  <span className="text-[3.5vw] font-bold">
+                    Kontak <span className="text-red-600">SEGERA!</span>
+                  </span>
+                  <br />
+                  untuk bahas langkah selanjutnya, dan buka peluang yang belum
+                  terlihat.
+                </p>
+                <Link
+                  href="https://api.whatsapp.com/send?phone=628111167867&text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20produk%20Anda."
+                  target="_blank"
+                >
+                  <button
+                    className={` cursor-pointer w-[85%] sm:h-[5vh] rounded-sm bg-[#59DB8A] text-white grid grid-cols-[1fr_4fr]`}
+                  >
+                    <div className=" w-full h-full flex justify-center items-center">
+                      <WAIconWhite />
+                    </div>
+                    <span className="w-full h-full flex items-center text-white poppins-font text-[2vw] lg:text-[2vw]">
+                      Hubungi Sekarang!
+                    </span>
+                  </button>
+                </Link>
+              </div>
+              <div className="w-full h-full flex-centered">
+                <Image
+                  src="/assets/masih-ragu-avatar.png"
+                  alt="my-avatar"
+                  className=" xl:w-[75vh] xl:h-[75vh] lg:w-[60vh] lg:h-[60vh] object-cover "
+                  width={1000}
+                  height={1000}
+                />
+              </div>
+            </div>
+            <div className="mt-[3vh] flex flex-col gap-y-[1.5vh] sm:gap-y-[5vh]">
+              <p className="text-[2.7vw] text-center">
+                Tampilkan profesionalismemu dengan cara yang tepat, biar klien
+                langsung yakin kamu yang mereka cari!
+              </p>
+              <Link href="/service" className="flex-centered">
+                <button className="cursor-pointer w-[80%]  sm:h-[7vh]  text-[3.5vw] bg-[#3B82F6] text-white rounded-md">
+                  Lihat Layanan Sekarang!
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </main>
+    );
   } else {
     return (
       <main className="w-full h-[100vh] sm:h-[250vh] md:h-[100vh] lg:h-[200vh] xl:h-[200vh] grid grid-rows-[15vh_80vh] sm:grid-rows-[60vh_150vh] md:grid-rows-[20vh_80vh] lg:grid-rows-[25vh_80vh]">

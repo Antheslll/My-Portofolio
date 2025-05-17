@@ -14,6 +14,20 @@ const ProjectHeaderImage = () => {
 
 export default ProjectHeaderImage;
 
+const ProjectHeaderImageSM = () => {
+  return (
+    <Image
+      src="/assets/my-project-header.png"
+      alt="my-avatar"
+      className="sm:w-[47vh] sm:h-[47vh] object-cover "
+      width={1000}
+      height={1000}
+    />
+  );
+};
+
+export { ProjectHeaderImageSM };
+
 const ProjectHeaderImageMD = () => {
   return (
     <Image
