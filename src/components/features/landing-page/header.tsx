@@ -53,7 +53,7 @@ const HomePageHeader = () => {
   } else if (width >= 1024) {
     return (
       <>
-        <header className="lg:h-[90vh] xl:h-[120vh] grid lg:grid-cols-[60%_40%] lg:bg-blue-500 xl:bg-red-500 sm:bg-amber-300 md:bg-black">
+        <header className="lg:h-[90vh] xl:h-[140vh] grid lg:grid-cols-[60%_40%] lg:bg-blue-500 xl:bg-red-500 sm:bg-amber-300 md:bg-black">
           <div className="w-full pl-[10%] pt-[15vh]">
             <div className="w-[90%] flex items-center flex-col gap-y-[2vh]">
               <div className="w-full">
